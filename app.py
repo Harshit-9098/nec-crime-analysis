@@ -5,7 +5,7 @@ import seaborn as sns
 st.set_page_config(page_title="Crime Rate Analysis Dashboard", page_icon="📊", layout="wide")
 @st.cache_data
 def load_data():
-    return pd.read_csv("dataset/01_District_wise_crimes_committed_IPC_2001_2012.csv")
+    return pd.read_csv("01_District_wise_crimes_committed_IPC_2001_2012.csv")
 df = load_data()
 st.title("📊 Crime Rate Analysis Dashboard")
 st.markdown("**Statistical Data Analysis of Recorded IPC Crimes in India (2001–2012)**")
